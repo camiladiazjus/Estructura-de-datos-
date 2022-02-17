@@ -1,0 +1,17 @@
+#Camila Diaz
+def maximo(a,b):
+    if a>b:
+        return a
+    else:
+        return b
+
+def minimo(a,b):
+    if a<b:
+        return a
+    else:
+        return b
+    
+x=int(input("Ingrese un numero: "))
+y=int(input("Ingrese un segundo numero: "))
+print("El mayor es: ",maximo(x,y))
+print("El menor es: ",minimo(x,y))
