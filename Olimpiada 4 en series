@@ -1,0 +1,6 @@
+#ECamila Diaz
+def mayusculas(nombre):
+    nombre = input("¿Cómo te llamas? ")
+    print(nombre.upper() + " tiene " + str(len(nombre)) + " letras")
+
+mayusculas(nombre)
