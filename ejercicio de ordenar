@@ -1,0 +1,19 @@
+numeros = []
+ 
+introducir = int(input("Cuantos numeros quieres introducir? "))    
+ 
+for i in range(introducir):
+ 
+    repetir = False
+    while repetir == False: 
+        valor = int(input("Introduce el numero: "))
+        if valor <= -100 or valor >=100:
+            print("Valor no valido")
+            repetir = False
+        else:
+            repetir = True
+ 
+    numeros.append(valor)  
+ 
+numeros.sort()      
+print(numeros)
