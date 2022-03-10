@@ -1,0 +1,13 @@
+def euclides(n1,n2): 
+    if n1<n2:
+        n1,n2=n2,n1 
+    resto=n1%n2
+    if resto==0:
+        return (n2)
+ 
+    return euclides(n2,resto) 
+n1=369
+n2=258
+comunDivisor=euclides(n1,n2)
+ 
+print("MCD de ({}, {}) es: {}".format(n1,n2,comunDivisor))
