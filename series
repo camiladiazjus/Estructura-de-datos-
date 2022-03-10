@@ -1,0 +1,8 @@
+#Camila Diaz
+awarded = []
+n=int(input("Ingrese la cantidad de numeros en el vestor: "))
+for i in range(n):
+    awarded.append(int(input("Introduce un número: ")))
+awarded.sort()
+
+print("Los números del vector son: " + str(awarded))
