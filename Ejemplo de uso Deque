@@ -1,0 +1,22 @@
+#Ejemplo de uso Deque
+de  las colecciones  importar  deque
+
+#Se puede inicializar con deque una lista
+números  =  deque ()
+
+#Utiliza append para ingresar valores
+numeros _ agregar ( 99 )
+numeros _ agregar ( 15 )
+numeros _ agregar ( 85 )
+numeros _ agregar ( 50 )
+numeros _ agregar ( 47 )
+
+#Se puede hacer pop
+último_elemento  =  números . estallar ()
+imprimir ( último_elemento ) #47
+imprimir ( numeros )    #deque([99, 15, 82, 50])
+
+#O funcionar como cola
+primer_elemento  =  números . izquierda emergente ()
+imprimir ( primer_elemento ) #99
+imprimir ( numeros )   #deque([15, 82, 50])
