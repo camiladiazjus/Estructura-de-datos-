@@ -1,0 +1,18 @@
+letters = []
+
+#incluyendo elementos push
+letters.append('c')
+letters.append('a')
+letters.apend('t')
+letters.append('g')
+
+#sacando elementos
+last_item = letters.pop()
+print(last_item)
+
+#nuevamente
+last_item = letters.pop()
+print(last_item)
+
+#como queda la pila
+print(letters)
