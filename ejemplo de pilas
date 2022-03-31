@@ -1,0 +1,9 @@
+#Ejemplo de pila - LIFO (Last In First Out)
+pila  = []
+#Incluir elementos - ¡Empuja! (apilar)
+pila _ agregar ( 'c' )
+pila _ agregar ( 'a' )
+imprimir ( pila )
+#Sacar elementos - Pop! (desapilar)
+x = pila . estallar ()
+imprimir ( pila )     #lo restante
