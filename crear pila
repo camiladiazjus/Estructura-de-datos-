@@ -3,7 +3,7 @@ letters = []
 #incluyendo elementos push
 letters.append('c')
 letters.append('a')
-letters.apend('t')
+letters.append('t')
 letters.append('g')
 
 #sacando elementos
