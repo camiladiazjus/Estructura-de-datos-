@@ -1,0 +1,10 @@
+#Ejemplo de cola - FIFO
+cola = []
+#Incluir elementos - Empuje (apilar)
+cola _ agregar ( 'c' )
+cola _ agregar ( 'a' )
+cola _ agregar ( 'b' )
+imprimir ( cola )
+#Sacar elementos - Pop! (desapilar)
+x = cola . popular ( 0 )
+imprimir ( cola )
