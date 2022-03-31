@@ -1,0 +1,32 @@
+días = []
+dias _ agregar ( 'Lunes' )
+dias _ agregar ( 'Martes' )
+dias _ anexar ( 'Miércoles' )
+dias _ agregar ( 'Jueves' )
+dias _ agregar ( 'Viernes' )
+dias _ agregar ( 'Sábado' )
+dias _ agregar ( 'Domingo' )
+
+imprimir ( días ) #Días completos.
+
+x = días . pop ()   #Días sin Domingo
+imprimir ( días )
+
+x = días . pop ()   #Días sin Domingo, Sábado
+imprimir ( días )
+
+x = días . pop ()   #Días sin Domingo, Sábado, Viernes
+imprimir ( días )
+
+x = días . pop ()   #Días sin Domingo, Sábado, Viernes, Jueves
+imprimir ( días )
+
+x = días . pop ()   #Días sin Domingo, Sábado, Viernes, Jueves, Miércoles
+imprimir ( días )
+
+x = días . pop ()   #Días sin Domingo, Sábado, Viernes, Jueves, Miércoles, Martes.
+imprimir ( días )
+
+x = días . pop ()   #Ningún día
+imprimir ( días )
+
