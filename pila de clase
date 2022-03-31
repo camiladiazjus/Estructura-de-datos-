@@ -1,0 +1,43 @@
+Pila de clase :
+    def  __init__ ( auto ):
+        uno mismo artículos  = []
+    
+    def  estáVacío ( self ):
+        devolverse  a uno mismo . elementos  == []
+    
+    def  empujar ( auto , artículo ):
+        uno mismo artículos _ adjuntar ( elemento )
+        
+    def  pop ( uno mismo ):
+        devolverse  a uno mismo . artículos _ estallar ()
+    
+    def  arriba ( auto ):
+        devolverse  a uno mismo . elementos [ len ( auto . elementos ) - 1 ]
+    
+     tamaño def ( auto ):
+        devolver  len ( auto . artículos )
+
+s  =  Stack () #Creando un objeto de la clase Stack.
+n  =  int ( input ( "Ingrese la cantidad de numeros que desea ingresar: " ))
+
+para  i  en  rango ( n ):
+    x = int ( input ( "Ingrese un numero: " ))
+    s . empujar ( x )
+
+si  s . estáVacío () ==  Falso :
+    para  i  en  rango ( n ):
+        y = s . estallar ()
+        imprimir ( y )
+
+print ( s . isEmpty ()) #Verdadero o Falso
+
+#s.push(100) #Adicción a un valor (100)
+#s.push(200) #Adicción a un valor (200)
+
+#if (Pila==[]):
+# print("La pila ya está vacía.")
+
+#demás:
+# s.pop()    
+
+s . tamaño ()     #Muestra el tamaño (1)
