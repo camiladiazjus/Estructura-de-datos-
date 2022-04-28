@@ -1,0 +1,57 @@
+import os
+
+print( "\nCrear un archivo")
+print ("================")
+
+NOMBRE_ARCHIVO = 'datos.txt'
+
+archivo = open(NOMBRE_ARCHIVO, 'w') # abre el archivo datos.txt
+archivo.write("\nLUNES")
+archivo.write("\nToca brazos: ")
+archivo.write("\20 lagartijas")
+archivo.write("\10 fondos")
+archivo.write("\n30 segundos plancha")
+archivo.write("\n5 rondas")
+archivo.write("\nMARTES")
+archivo.write("\nToca gluteos: ")
+archivo.write("\n15 puentes con o sin peso X4")
+archivo.write("\n20 sentadillas dinamicas X3")
+archivo.write("\n20 estocadas Xpierna")
+archivo.write("\nMIERCOLES")
+archivo.write("\nToca cardio: ")
+archivo.write("\ncircuito por tiempo 45 segundos activoX15 segundos de descanso")
+archivo.write("\nPrimer ejercicio: polichinalas")
+archivo.write("\nSegundo ejercicio: plancha dinamica")
+archivo.write("\nTercer ejercicio: velocidad(corrida) ")
+archivo.write("\nCuarto ejercicio: salto de cuerda")
+archivo.write("\nJUEVES")
+archivo.write("\nToca abs: ")
+archivo.write("\nPrimer ejercicio: polichinalas")
+archivo.write("\nSegundo ejercicio: plancha dinamica")
+archivo.write("\nTercer ejercicio: velocidad(corrida) ")
+archivo.write("\nCuarto ejercicio: salto de cuerda")
+
+if NOMBRE_ARCHIVO in os.listdir("."):
+    print (("\nArchivo creado en la ruta: \n\n\t{0}/{1}").format(os.getcwd(), NOMBRE_ARCHIVO))
+else:
+    print ("El archivo no fue creado!!!\n")
+    
+print ("\n\nLeer un archivo")
+print ("===============\n")
+
+archivo = open(NOMBRE_ARCHIVO, 'r')
+contenido = archivo.read()
+print (contenido)
+archivo.close()
+
+print ("\n\nIterar sobre un archivo")
+print ("=======================\n")
+
+archivo = open(NOMBRE_ARCHIVO, 'r')
+for linea in archivo:
+    print (linea)
+print ("\n")
+archivo.close()
+
+"""os.remove(os.getcwd()+"/"+NOMBRE_ARCHIVO)
+print("eliminado archivo desde la ruta: \n\n\t{0}\{1}".format(os.getcwd(), NOMBRE_ARCHIVO))"""
