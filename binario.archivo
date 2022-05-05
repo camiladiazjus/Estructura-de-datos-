@@ -1,0 +1,41 @@
+import pickle
+
+with open('ejemplito.pkl', 'wb') as archivo:
+    pkl = pickle.Pickler(archivo)
+    
+    lista1 = [1, 2, 3]
+    lista2 = [4, 5]
+    diccionario = {'campo1':1, 'campo2': 'dos'}
+    
+    pkl.dump(lista1)
+    pkl.dump(None)
+    pkl.dump(lista2)
+    pkl.dump('Hola mundo')
+    pkl.dump(diccionario)
+    pkl.dump(1)
+    
+with open('ejemplito.pkl', 'rb') as archivo:
+    leyendo=True
+    while leyendo:
+        try:
+            data = pickle.load(archivo)
+        except EOFError:
+            leyendo = False
+        else:
+            print('### Esta linea no es del archivo ###')
+            print(data)
+lista= [#creo la lista que quiero guardar
+    {'usuario': 'usuario 1', 'puntaje':5},
+    {'usuario': 'usuario 2', 'puntaje':3},
+    {'usuario': 'usuario 3', 'puntaje':1},
+]
+
+#Guarpo la lista que quiero guardar
+with open('ejemplo_2.pk1','wb') as archivo:
+    pkl = pickle.Pickler(archivo)
+    pkl.dump(lista)
+
+#Leo el archivo
+with open('ejemplo_2.pk1','rb') as archivo:
+    data = pickle.load(archivo)
+    print(data)#y muestro su contenido
