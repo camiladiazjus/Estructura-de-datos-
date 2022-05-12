@@ -1,0 +1,16 @@
+def es_primo(x):
+    if x>=1:
+        for i in range (2,x):
+            if x % i==0:
+                return false
+        return True
+def meter_primos(n):
+    cola=[]
+    for i in range(n):
+        x=int(input("Ingrese el numero: "))
+        if es_primo(x):
+            cola.append(x)
+        print(cola)
+        
+n=int(input("Ingrese tamaño de la cola: "))
+print(meter_primos(n))
